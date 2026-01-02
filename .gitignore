@@ -1,0 +1,50 @@
+# ================================
+# Python / PyInstaller
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.spec~
+
+# PyInstaller
+build/
+dist/
+*.spec.bak
+
+# ================================
+# Ejecutables / Binarios
+# ================================
+*.exe
+*.dll
+*.so
+*.bin
+
+# Core ONEDIR
+_internal/
+
+# ================================
+# Inno Setup
+# ================================
+4_InnoSetup/**/Output/
+*.iss~
+
+# ================================
+# Recursos generados
+# ================================
+3_Package_Final/Programa/**
+2_Installer_Resources/ProgramData/**/bin/**
+
+# ================================
+# Logs / temporales
+# ================================
+*.log
+*.tmp
+
+# ================================
+# IDE / OS
+# ================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
