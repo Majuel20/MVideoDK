@@ -1,0 +1,41 @@
+MVideoDK — Acuerdo de Licencia de Usuario Final (EULA)
+Versión: 1.0.0
+
+IMPORTANTE: LEE ESTE ACUERDO ANTES DE INSTALAR O USAR ESTE SOFTWARE.
+Al instalar, copiar o usar MVideoDK, aceptas los términos de este acuerdo.
+
+1) Propósito y tipo de uso
+MVideoDK se comparte con fines EDUCATIVOS y de USO PERSONAL (aprendizaje, pruebas y mejora).
+No se autoriza su uso con fines comerciales ni para ofrecer servicios a terceros sin permiso explícito del autor.
+
+2) Restricciones
+NO está permitido:
+- Vender, revender o sublicenciar el software.
+- Distribuir el instalador o binarios modificados como “tu producto”.
+- Quitar avisos de autoría, créditos o licencias de terceros.
+- Usar el software para actividades que violen leyes, términos de servicio de plataformas, o derechos de terceros.
+
+SÍ está permitido:
+- Usar el software con fines personales/educativos.
+- Revisar el código (si está disponible), aprender y proponer mejoras (issues/pull requests) en el repositorio oficial.
+- Compartir sugerencias o mejoras, siempre manteniendo créditos y avisos de terceros.
+
+3) Responsabilidad (AS-IS)
+El software se entrega “TAL CUAL” (AS IS), sin garantía de funcionamiento, seguridad o adecuación.
+El usuario asume toda la responsabilidad por su uso.
+El autor no se hace responsable por daños, pérdidas de datos, bloqueos de cuentas, sanciones,
+uso indebido, ni consecuencias derivadas del uso del software o herramientas incluidas.
+
+4) Componentes de terceros
+MVideoDK puede incluir o utilizar componentes de terceros (por ejemplo: ffmpeg, yt-dlp, cloudflared,
+Playwright, etc.) que tienen sus propias licencias y condiciones. El usuario debe respetarlas.
+Consulta el archivo THIRD_PARTY_NOTICES.txt.
+
+5) Marcas y no afiliación
+MVideoDK no está afiliado ni respaldado por Google, Microsoft, Brave, Cloudflare u otras marcas mencionadas.
+Las marcas registradas pertenecen a sus respectivos dueños.
+
+6) Terminación
+Si no aceptas estos términos, no instales ni uses este software.
+
+Autor / Publicador: Majuel20

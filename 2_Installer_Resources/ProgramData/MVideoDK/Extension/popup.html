@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MVideoDk</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  width: 320px;
+  padding: 12px;
+  background-color: #fafafa;
+}
+h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #1976d2;
+}
+.sep {
+  margin: 10px 0;
+  border-top: 1px solid #ddd;
+}
+label {
+  display: block;
+  margin-top: 8px;
+}
+input[type=text], input[type=url] {
+  width: 100%;
+  padding: 0 6px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  height: 32px;
+  line-height: 32px;
+}
+button {
+  margin-top: 8px;
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #0d47a1;
+}
+.small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.mode-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* input servidor */
+.secret-input {
+  flex: 1;
+  font-family: monospace;
+}
+.secret-hidden {
+  -webkit-text-security: disc;
+}
+
+/* botones icono */
+.icon-btn {
+  margin-top: 0;
+  width: 40px;
+  min-width: 40px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* colores específicos */
+#modeSwitch {
+  background-color: #ff9800;
+  width: auto;
+  padding: 4px 10px;
+}
+#modeSwitch:hover {
+  background-color: #e65100;
+}
+
+#downloadBtn,
+#downloadCurrentBtn,
+#downloadPlaylistBtn {
+  background-color: #1976d2;
+}
+#downloadBtn:hover,
+#downloadCurrentBtn:hover,
+#downloadPlaylistBtn:hover {
+  background-color: #0d47a1;
+}
+
+#viewQueueBtn {
+  background-color: #9c27b0;
+}
+#viewQueueBtn:hover {
+  background-color: #7b1fa2;
+}
+
+#openDownloadsBtn {
+  background-color: #757575;
+}
+#openDownloadsBtn:hover {
+  background-color: #616161;
+}
+
+#toggleFloatBtn {
+  background-color: #4caf50;
+}
+#toggleFloatBtn:hover {
+  background-color: #388e3c;
+}
+
+#status {
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h3>MVideoDk</h3>
+
+<!-- SERVIDOR -->
+<div>
+  <label>Servidor local MVideoDk:</label>
+  <div class="flex-row">
+    <input id="serverUrlInput" type="text" class="secret-input" />
+    <button id="toggleServerUrlBtn" type="button" class="icon-btn">👁️</button>
+    <button id="copyServerUrlBtn" type="button" class="icon-btn">📋</button>
+  </div>
+  <div class="small">
+    Esta URL y el token se cargan automáticamente desde <code>config_ext.json</code>.
+  </div>
+
+  <!-- Botón flotante -->
+  <button id="toggleFloatBtn" type="button">Botón flotante: [OFF]</button>
+</div>
+
+<div class="sep"></div>
+
+<!-- MODO Y URL -->
+<div>
+  <div class="mode-row">
+    <label style="margin-top: 0;">Modo de URL:</label>
+    <button id="modeSwitch" type="button">Modo: Video</button>
+  </div>
+
+  <label>URL (Video / Lista):</label>
+  <input id="urlInput" type="url" placeholder="https://..." />
+
+  <button id="downloadBtn" type="button">⬇ Descargar ahora</button>
+  <button id="downloadCurrentBtn" type="button">🎬 Descargar video actual</button>
+  <button id="downloadPlaylistBtn" type="button">🎵 Descargar playlist actual</button>
+</div>
+
+<div class="sep"></div>
+
+<!-- OPCIONES -->
+<div>
+  <button id="viewQueueBtn" type="button">🧺 Ver cola en el navegador</button>
+  <button id="openDownloadsBtn" type="button">📂 Abrir descargas (vía servidor)</button>
+</div>
+
+<div class="small" style="margin-top:6px; text-align:center;">
+  Ambos botones abren URLs del servidor local MVideoDk.
+</div>
+
+<div id="status" class="small"></div>
+
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+THIRD-PARTY NOTICES — MVideoDK
+
+MVideoDK utiliza bibliotecas y herramientas de terceros.
+Cada componente mantiene su propia licencia.
+
+Este archivo es un resumen para acompañar la distribución del instalador.
+
+Componentes comunes (según configuración):
+- Python (PSF License)
+- PyInstaller (GPLv2 con excepción)
+- PyQt6 (GPLv3 o licencia comercial, según modalidad utilizada)
+- Tkinter / Tcl-Tk (ecosistema Python / Tcl-Tk)
+- Pillow (MIT-CMU)
+- FastAPI (MIT)
+
+Herramientas externas
+(normalmente en C:\ProgramData\MVideoDK\bin\):
+- FFmpeg (LGPL v2.1+ con partes opcionales GPL según el build)
+- yt-dlp (Unlicense; algunos binarios pueden incluir otros componentes)
+- cloudflared (Apache 2.0)
+- adb (Apache 2.0)
+- Playwright (Apache 2.0)
+
+Para más detalles, revisa la documentación instalada:
+  C:\Program Files\MVideoDK\docs\THIRD_PARTY_NOTICES.txt

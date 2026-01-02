@@ -1,0 +1,28 @@
+PRIVACIDAD — MVideoDK
+
+MVideoDK es un proyecto personal/educativo.
+
+Resumen:
+- No requiere cuentas.
+- No está diseñado como un servicio comercial.
+- La información principal se almacena localmente.
+
+Datos locales:
+- C:\ProgramData\MVideoDK\Config\
+- C:\ProgramData\MVideoDK\Logs\
+- C:\ProgramData\MVideoDK\Data\ (si aplica)
+- C:\ProgramData\MVideoDK\Temp\
+
+Red y terceros:
+Según las funciones usadas, MVideoDK puede interactuar con servicios externos
+(por ejemplo, al descargar contenido) o usar herramientas externas instaladas
+localmente (ffmpeg, yt-dlp, cloudflared, etc.).
+
+Esos terceros pueden registrar información técnica estándar (p. ej. IP).
+
+Extensión (opcional):
+La extensión se instala manualmente en el navegador (modo desarrollador).
+Si no deseas este componente, no lo instales.
+
+Más información:
+  C:\Program Files\MVideoDK\docs\PRIVACY.txt
